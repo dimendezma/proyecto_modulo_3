@@ -1,0 +1,37 @@
+.my_navbar {
+    padding: 0px 50px 0px 50px;
+    height: 50px;
+}
+
+
+.jumbotron {
+    background-color: #efd9fd;
+    color: black;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #efd9fd;
+    margin-top: 20px 0px 0px 0px;
+}
+
+.card-serv {
+    flex: 1 200px;
+    padding: 2px 5px 2px 5px;
+    margin: 10px;
+
+
+}
+
+.img-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-mas {
+    width: 100%;
+}
