@@ -46,65 +46,208 @@
             </ol>
         </nav>
         <hr>
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                    <th>Precio</th>
-                    <th>Páginas Web</th>
-                    <th>Repositorio Digital</th>
-                    <th>Capacitaciones</th>
-                    <th>Marketing Digital</th>
-                    <th>Posicionamiento de Marca</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><i class="fa-solid fa-dollar-sign"></i></td>
-                        <td>Paquete 1</td>
-                        <td>Paquete 1</td>
-                        <td>Paquete 1</td>
-                        <td>Paquete 1</td>
-                        <td>Paquete 1</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></td>
-                        <td>Paquete 2</td>
-                        <td>Paquete 2</td>
-                        <td>Paquete 2</td>
-                        <td>Paquete 2</td>
-                        <td>Paquete 2</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i
-                                class="fa-solid fa-dollar-sign"></i></td>
-                        <td>Paquete 3</td>
-                        <td>Paquete 3</td>
-                        <td>Paquete 3</td>
-                        <td>Paquete 3</td>
-                        <td>Paquete 3</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i
-                                class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></td>
-                        <td>Paquete 4</td>
-                        <td>Paquete 4</td>
-                        <td>Paquete 4</td>
-                        <td>Paquete 4</td>
-                        <td>Paquete 4</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i
-                                class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i
-                                class="fa-solid fa-dollar-sign"></i></td>
-                        <td>Paquete 5</td>
-                        <td>Paquete 5</td>
-                        <td>Paquete 5</td>
-                        <td>Paquete 5</td>
-                        <td>Paquete 5</td>
-                    </tr>
-                </tbody>
 
-            </table>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="comparar-tab" data-bs-toggle="tab"
+                    data-bs-target="#comparar-tab-pane" type="button" role="tab" aria-controls="comparar-tab-pane"
+                    aria-selected="true">Comparar</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="paquetes-tab" data-bs-toggle="tab" data-bs-target="#paquetes-tab-pane"
+                    type="button" role="tab" aria-controls="paquetes-tab-pane" aria-selected="false">Paquetes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="comentarios-tab" data-bs-toggle="tab"
+                    data-bs-target="#comentarios-tab-pane" type="button" role="tab" aria-controls="comentarios-tab-pane"
+                    aria-selected="false">Compentarios</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="comparar-tab-pane" role="tabpanel" aria-labelledby="comparar-tab"
+                tabindex="0">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Precio</th>
+                            <th>Páginas Web</th>
+                            <th>Repositorio Digital</th>
+                            <th>Capacitaciones</th>
+                            <th>Marketing Digital</th>
+                            <th>Posicionamiento de Marca</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-dollar-sign"></i></td>
+                                <td>Paquete 1</td>
+                                <td>Paquete 1</td>
+                                <td>Paquete 1</td>
+                                <td>Paquete 1</td>
+                                <td>Paquete 1</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></td>
+                                <td>Paquete 2</td>
+                                <td>Paquete 2</td>
+                                <td>Paquete 2</td>
+                                <td>Paquete 2</td>
+                                <td>Paquete 2</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i
+                                        class="fa-solid fa-dollar-sign"></i></td>
+                                <td>Paquete 3</td>
+                                <td>Paquete 3</td>
+                                <td>Paquete 3</td>
+                                <td>Paquete 3</td>
+                                <td>Paquete 3</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i
+                                        class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></td>
+                                <td>Paquete 4</td>
+                                <td>Paquete 4</td>
+                                <td>Paquete 4</td>
+                                <td>Paquete 4</td>
+                                <td>Paquete 4</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i
+                                        class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i><i
+                                        class="fa-solid fa-dollar-sign"></i></td>
+                                <td>Paquete 5</td>
+                                <td>Paquete 5</td>
+                                <td>Paquete 5</td>
+                                <td>Paquete 5</td>
+                                <td>Paquete 5</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="paquetes-tab-pane" role="tabpanel" aria-labelledby="paquetes-tab"
+                tabindex="0">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Paquetes</th>
+                            <th>Descripción</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Paquete 1</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, similique quos.
+                                    Unde hic similique iusto? Aspernatur officia optio voluptatum modi, temporibus
+                                    maiores ab pariatur quas cupiditate delectus ea. Debitis, iste.</td>
+
+                            </tr>
+                            <tr>
+                                <td>Paquete 2</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, similique quos.
+                                    Unde hic similique iusto? Aspernatur officia optio voluptatum modi, temporibus
+                                    maiores ab pariatur quas cupiditate delectus ea. Debitis, iste.</td>
+
+                            </tr>
+                            <tr>
+                                <td>Paquete 3</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, similique quos.
+                                    Unde hic similique iusto? Aspernatur officia optio voluptatum modi, temporibus
+                                    maiores ab pariatur quas cupiditate delectus ea. Debitis, iste.</td>
+
+                            </tr>
+                            <tr>
+                                <td>Paquete 4</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, similique quos.
+                                    Unde hic similique iusto? Aspernatur officia optio voluptatum modi, temporibus
+                                    maiores ab pariatur quas cupiditate delectus ea. Debitis, iste.</td>
+
+                            </tr>
+                            <tr>
+                                <td>Paquete 5</td>
+                                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, similique quos.
+                                    Unde hic similique iusto? Aspernatur officia optio voluptatum modi, temporibus
+                                    maiores ab pariatur quas cupiditate delectus ea. Debitis, iste.</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <hr>
+
+                    <h3>Recibimos las siguientes tarjetas</h3>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Visa
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Cupiditate laudantium, at nihil maxime non aperiam numquam, provident esse
+                                    voluptatibus praesentium necessitatibus repudiandae adipisci deserunt nulla porro,
+                                    accusantium exercitationem voluptatem ratione?</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Master Card
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nisi obcaecati voluptates laudantium ratione, dolore quia veniam iusto illo harum
+                                    esse amet architecto quae, ipsum autem sapiente delectus est, asperiores recusandae.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    American Express
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Necessitatibus obcaecati repellat quaerat odit nam, laboriosam consequuntur saepe
+                                    illo repellendus fuga facere impedit quia voluptatibus qui veniam quasi ipsa,
+                                    deleniti dolore?</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="comentarios-tab-pane" role="tabpanel" aria-labelledby="comentarios-tab"
+                tabindex="0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem blanditiis ut ipsum tenetur
+                nobis corporis quasi ex repellat itaque, dolorem impedit, quos nihil sint provident repudiandae in nisi,
+                fuga quam.
+                Aspernatur nam eos veniam alias incidunt quibusdam, consectetur sit labore laboriosam repudiandae
+                pariatur perferendis tempore eum dignissimos cumque fugit ullam enim assumenda error aliquam esse
+                necessitatibus? Quam labore nesciunt soluta!
+                Repellendus quo, architecto reiciendis doloremque cumque, deserunt aliquid delectus ut voluptatem,
+                distinctio incidunt eius recusandae blanditiis tenetur iusto cum deleniti! Temporibus enim laudantium
+                facilis molestiae repudiandae odio natus a placeat.
+                Dolores delectus officiis hic, autem magnam repudiandae odit doloribus est, optio dignissimos adipisci
+                dolorum, vitae harum? Velit illum debitis similique nemo adipisci suscipit magni eveniet fuga illo
+                aliquid! Ipsum, temporibus?
+            </div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                tabindex="0">...</div>
         </div>
+
         <hr>
     </div>
 
