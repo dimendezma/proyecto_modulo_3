@@ -90,7 +90,9 @@
         <div class="d-flex flex-wrap">
             <div class="card card-serv d-flex flex-column justify-content-between align-items-center">
                 <div class="card-body">
-                    <h4 class="card-title">Páginas Web</h4>
+                    <h4 class="card-title" data-bs-toggle="tooltip" data-placement="top"
+                        title="Las mejores páginas web del mercado">Páginas Web
+                    </h4>
                     <img src="/img/serv1.jpg" alt="Imagen de Servicio" class="card-img-top img-serv">
                     <p class="card-text">
                         Diseño e implementación de de páginas web a la medida de su necesidad.
@@ -101,7 +103,9 @@
 
             <div class="card card-serv d-flex flex-column justify-content-between align-items-center">
                 <div class="card-body">
-                    <h4 class="card-title">Repositorios Digitales</h4>
+                    <h4 class="card-title" data-bs-toggle="tooltip" data-placement="top"
+                        title="Los mejores repositorios del mercado">Repositorios
+                        Digitales</h4>
                     <img src="/img/serv2.jpg" alt="Imagen de Servicio" class="card-img-top img-serv">
                     <p class="card-text">
                         Implementamos su repositorio digital en la ultima versión de DSpace.
@@ -112,7 +116,8 @@
 
             <div class="card card-serv d-flex flex-column justify-content-between align-items-center">
                 <div class="card-body">
-                    <h4 class="card-title">Capacitaciones</h4>
+                    <h4 class="card-title" data-bs-toggle="tooltip" data-placement="top"
+                        title="Capacitaciones excelentes">Capacitaciones</h4>
                     <img src="/img/serv3.jpg" alt="Imagen de Servicio" class="card-img-top img-serv">
                     <p class="card-text">
                         Capacitamos su personal en diferentes disciplinas.
@@ -123,7 +128,9 @@
 
             <div class="card card-serv d-flex flex-column justify-content-between align-items-center">
                 <div class="card-body">
-                    <h4 class="card-title">Marketing Digital</h4>
+                    <h4 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="Marketing con altura">
+                        Marketing Digital
+                    </h4>
                     <img src="/img/serv4.jpg" alt="Imagen de Servicio" class="card-img-top img-serv">
                     <p class="card-text">
                         Podemos incrementar sus ventas, tenemos el mejor equipo de Marketing Digital.
@@ -134,7 +141,9 @@
 
             <div class="card card-serv d-flex flex-column justify-content-between align-items-center">
                 <div class="card-body">
-                    <h4 class="card-title">Posicionamiento de Marca</h4>
+                    <h4 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="No te lo pierdas">
+                        Posicionamiento de
+                        Marca</h4>
                     <img src="/img/serv5.jpg" alt="Imagen de Servicio" class="card-img-top img-serv">
                     <p class="card-text">
                         Le mostramos que acciones debe implementar para obtener el mejor rendimiento en la web y
@@ -147,7 +156,52 @@
 
         </div>
         <hr>
+        <!-- Button trigger modal -->
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">
+                Contacto
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tu email</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Mensaje</label>
+                                <input type="text" class="form-control" id="message-text">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
     </div>
+
+
+
+
+
 
 
     <footer class="pt-4 pt-md-5 border-top">
@@ -193,6 +247,15 @@
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/popper.js/dist/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
+    <!--modal -->
+
+
+
 </body>
 
 </html>
