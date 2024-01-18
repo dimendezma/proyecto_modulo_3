@@ -46,9 +46,40 @@
         </nav>
         <hr>
 
-        <div class="img-banner"><img src="/img/internet.jpg" alt="Imagen de Internet" class="img-fluid"></div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/internet.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/internet2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/internet3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
         <hr>
+
         <div class="row">
             <div class="col-sm-4">
                 <button class="btn btn-primary btn-index" type="button" data-bs-toggle="collapse"
@@ -177,6 +208,11 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
+                                <label for="name" class="col-form-label">Tu Nombre</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+
+                            <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Tu email</label>
                                 <input type="text" class="form-control" id="recipient-name">
                             </div>
@@ -250,6 +286,13 @@
     <script>
         $(function () {
             $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 5000
+            })
         });
     </script>
     <!--modal -->
