@@ -13,7 +13,7 @@
 .jumbotron {
     background-color: #efd9fd;
     color: black;
-    height: 200px;
+    height: auto;
     margin-bottom: 20px;
     margin-top: 50px;
 }
@@ -26,10 +26,46 @@ footer {
 
 .card-serv {
     flex: 1 200px;
-    padding: 2px 5px 2px 5px;
     margin: 10px;
 
 
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.card-body_img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.card-body_img::after {
+    content: "";
+    /* Create an after pseudo-element */
+    position: absolute;
+    /* Position the pseudo-element absolutely */
+    top: 0;
+    /* Position to the top of the parent container */
+    left: 0;
+    /* Position to the left of the parent container */
+    width: 100%;
+    /* Span the full width of the parent container */
+    height: 100%;
+    /* Span the full height of the parent container */
+    background-image: linear-gradient(to top, rgba(189, 0, 135, 0.6), rgba(255, 255, 255, 0));
+    /* Define the linear gradient */
+    background-blend-mode: overlay;
+    /* Overlay the gradient on top of the image */
+}
+
+.card-body_img img {
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+    object-position: center;
 }
 
 .img-banner {
@@ -54,4 +90,8 @@ footer {
     padding: 10px 20px 10px 20px;
     border: gray solid 1px;
     border-radius: 50px;
+}
+
+.tab-pane {
+    padding: 0px 150px 0px 150px;
 }
