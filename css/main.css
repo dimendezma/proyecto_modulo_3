@@ -1,3 +1,9 @@
+.nav-link.active {
+    background-image: linear-gradient(to right, #BD0087, #5A0241);
+    background-repeat: repeat-x;
+    --bs-nav-pills-border-radius: 50px;
+}
+
 .my_navbar {
     padding: 0px 50px 0px 50px;
     height: 50px;
@@ -38,4 +44,14 @@ footer {
 
 .btn-index {
     margin: 20px;
+}
+
+.nav-link {
+    color: gray;
+}
+
+#pills-tab {
+    padding: 10px 20px 10px 20px;
+    border: gray solid 1px;
+    border-radius: 50px;
 }
