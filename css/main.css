@@ -24,11 +24,14 @@ footer {
     margin-top: 20px 0px 0px 0px;
 }
 
+.my_list_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .card-serv {
     flex: 1 200px;
     margin: 10px;
-
-
 }
 
 .card-body {
@@ -38,8 +41,11 @@ footer {
 .card-body_img {
     position: relative;
     width: 100%;
-    height: 50%;
+    height: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-body_img::after {
@@ -55,15 +61,15 @@ footer {
     /* Span the full width of the parent container */
     height: 100%;
     /* Span the full height of the parent container */
-    background-image: linear-gradient(to top, rgba(189, 0, 135, 0.6), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to top, rgba(189, 0, 135, 0.7), rgba(255, 255, 255, 0));
     /* Define the linear gradient */
     background-blend-mode: overlay;
     /* Overlay the gradient on top of the image */
 }
 
 .card-body_img img {
-    width: 100%;
-    height: -webkit-fill-available;
+    height: 150px;
+    width: auto;
     object-fit: cover;
     object-position: center;
 }
