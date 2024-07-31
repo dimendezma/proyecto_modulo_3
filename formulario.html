@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/eventos.css">
+    <link rel="stylesheet" href="/node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/47a699c8fc.js" crossorigin="anonymous"></script>
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+
+    <ul class="nav nav-pills mb-3" id="pills-tab-sye" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link my_nav-link active" id="pills-seminare-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-seminare" type="button" role="tab" aria-controls="pills-seminare"
+                aria-selected="true"><i class="fa fa-2 fa-comments" aria-hidden="true"></i> Seminarios</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link my_nav-link" id="pills-events-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-event" type="button" role="tab" aria-controls="pills-event"
+                aria-selected="false"><i class="fa fa-2 fa-calendar-check" aria-hidden="true"></i> Eventos</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-seminare" role="tabpanel" aria-labelledby="pills-seminare-tab">
+            <form>
+                <div class="modal-body">
+                    <div class="row col-sm-12">
+                        <div class="form-group col-sm-12">
+                            <label for="tituloInput">Titulo del evento</label>
+                            <input type="text" class="form-control" id="tituloInput">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="ThematicInput">Temática o subtitulo</label>
+                            <textarea type="text" class="form-control" id="ThematicInput">
+                            </textarea>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="placeInput">Lugar del evento</label>
+                            <input type="text" class="form-control" id="placeInput">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="dateInput">Fecha del evento</label>
+                            <input type="date" class="form-control" id="dateInput">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="contactInput">Contacto</label>
+                            <input type="text" class="form-control" id="contactInput">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="mailInput">Correo</label>
+                            <input type="text" class="form-control" id="mailInput">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="summaryInput">Resumen del evento</label>
+                            <textarea type="text" class="form-control" id="summaryInput">
+                            </textarea>
+                        </div>
+                        <div class="form-group col-sm-12 container">
+                            <div>
+                                <label>Imagen en español</label>
+                                <input type="file" id="imageFile_es" name="imageFile" accept=".jpg, .jpeg, .png">
+                                <div id="banner_event"></div>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="dateIInput">Fecha de inicio del evento</label>
+                            <input type="date" class="form-control" id="dateIInput">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="datePInput">Fecha de publicación en página web</label>
+                            <input type="date" class="form-control" id="datePInput">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="dateCInput">Fecha de caducidad en página web</label>
+                            <input type="date" class="form-control" id="dateCInput">
+                        </div>
+                        <div class="form-group col-sm-12">
+                            <label for="URLInput">URL de inscripción</label>
+                            <textarea type="text" class="form-control" id="URLInput">
+                            </textarea>
+                        </div>
+                        <div class="form-group col-sm-12 container">
+                            <div>
+                                <label>Archivos</label>
+                                <input type="file" id="docsFiles" name="docsFiles[]"
+                                    accept=".docx,.pdf,.xlsx,.csv,.png,.jpg,.jpeg" multiple>
+                                <ul id="fileList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span hide="bandera_blog=='editar'">
+                            <button type="button" class="btn btn-primary float-right" id="createBlog">Guardar</button>
+                        </span>
+                        <span hide="bandera_blog=='guardar'">
+                            <button type="button" class="btn btn-primary float-right"
+                                id="updateBlog">Actualizar</button>
+                        </span>
+                    </div>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="pills-event" role="tabpanel" aria-labelledby="pills-events-tab">
+            yyyy
+        </div>
+    </div>
+
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+
+
+        <hr>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/internet.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/internet2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/internet3.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <button class="btn btn-primary btn-index" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#servicios_id" aria-expanded="false"
+                    aria-controls="multiCollapse1">Servicios</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary btn-index" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#metodologia_id" aria-expanded="false" aria-controls="multiCollapse2">Metodología de
+                    trabajo</button>
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary btn-index" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#costos_id" aria-expanded="false" aria-controls="multiCollapse3">Costos</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 collapse multi-collapse" id="servicios_id">
+
+                <p>Tenemos un amplio portafolio de servicios entre los que se encuentran: diseño e implementación de
+                    páginas web, creación de repositorios digitales, capacitación de personal TI, entre otros.</p>
+
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="metodologia_id">
+
+                <p>Desarrollamos cualquier tipo de proyecto tecnológico siguiendo el ciclo PHVA con el fin de obtener
+                    los mejores resultado, logrando siempre la artículación entre los distintos grupos de trabajo</p>
+
+            </div>
+            <div class="col-sm-4 collapse multi-collapse" id="costos_id">
+
+
+                <p>Somos altamente competitivos en nuestro mercado, brindando una excelente relación costo beneficio</p>
+
+            </div>
+        </div>
+        <hr>
+
+        <hr>
+        <!-- Button trigger modal -->
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">
+                Contacto
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name" class="col-form-label">Tu Nombre</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Tu email</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Mensaje</label>
+                                <input type="text" class="form-control" id="message-text">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+    </div>
+
+
+
+
+
+
+
+    <footer class="pt-4 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-6 col-md">
+                <h5>Redes Sociales</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#"><i class="fa-brands fa-facebook-f"> Facebook</i></a></li>
+                    <li><a class="text-muted" href="#"><i class="fa-brands fa-square-x-twitter"> Twitter</i></a></li>
+                    <li><a class="text-muted" href="#"><i class="fa-brands fa-square-instagram"> Instagram</i></a></li>
+                    <li><a class="text-muted" href="#"><i class="fa-brands fa-youtube"> Youtube</i></a></li>
+                    <li><a class="text-muted" href="#"><i class="fa-brands fa-linkedin"> Linkedin</i></a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Recursos</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Servicios</a></li>
+                    <li><a class="text-muted" href="#">Costos</a></li>
+                    <li><a class="text-muted" href="#">T&C</a></li>
+                    <li><a class="text-muted" href="#">Contcto</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Otros</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Páginas web</a></li>
+                    <li><a class="text-muted" href="#">Asesorías</a></li>
+                    <li><a class="text-muted" href="#">Capacitaciones</a></li>
+                    <li><a class="text-muted" href="#">Repositorios</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Contacto</h5>
+                <address class="d-flex flex-column justify-content-between">
+                    <p>Diego Méndez, Calle 17 # 4 -77, Bogotá D.C., Teléfono: 314 556 74 14, contact@web-project.com</p>
+                </address>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("[data-bs-toggle='tooltip']").tooltip();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 5000
+            })
+        });
+    </script>
+    <!--modal -->
+
+
+
+</body>
+
+</html>

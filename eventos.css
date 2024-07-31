@@ -1,0 +1,278 @@
+.event_title h5 {
+    color: #0089c2 !important;
+}
+
+h5.mb-1.text-truncate.ng-binding {
+    color: red;
+}
+
+/*Inicio modificación Publicaciones*/
+
+#pills-tab-news {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.my_nav-link {
+    border-radius: 50px !important;
+    border: none;
+}
+
+.my_nav-link.active {
+    background-image: linear-gradient(to right, #bd0087, #5a0241);
+    background-repeat: repeat-x;
+    border: none;
+}
+
+#publications-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-publis {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background-color: white;
+}
+
+.card-publis_anchor {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-publis_anchor:hover {
+    text-decoration: none;
+}
+
+.my_card-title {
+    font-weight: 500;
+    color: #808080 !important;
+    font-style: inherit;
+    font-size: 110%;
+    margin: 0px;
+}
+
+.my_card-body {
+    padding: 0px;
+    margin: 10px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.card-body_img {
+    padding: 0px;
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body_img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,
+            rgba(189, 0, 135, 0.5),
+            rgba(255, 255, 255, 0));
+    background-blend-mode: overlay;
+}
+
+.card-body_img img {
+    height: 150px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.my_card-text {
+    font-size: 85%;
+}
+
+.my_card_date {
+    background-color: transparent;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+}
+
+.my_card_date .calendar-icon-wrapper {
+    background: linear-gradient(90deg,
+            rgba(96, 2, 69, 1) 0%,
+            rgba(184, 0, 132, 1) 100%);
+    border-radius: 8px;
+    width: 24px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.badge_date {
+    margin: 0px 0px 0px 5px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+#pagination {
+    margin-bottom: 20px;
+    text-decoration: none !important;
+}
+
+@media (max-width: 650px) {
+    #publications-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*Fin modificación Publicaciones*/
+
+/*Inicio modificación Eventos*/
+
+#pills-tab-sye {
+    width: max-content;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px 10px 20px;
+    border: gray solid 1px;
+    border-radius: 50px;
+}
+
+#events-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-events {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    background-color: white;
+}
+
+.card-events_anchor {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-events_anchor:hover {
+    text-decoration: none;
+}
+
+.card-body_img_ev {
+    padding: 0px;
+    position: relative;
+    /*     height: 200px;
+      width: 100%; */
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body_img_ev::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,
+            rgba(189, 0, 135, 0.5),
+            rgba(255, 255, 255, 0));
+    background-blend-mode: overlay;
+}
+
+.card-body_img_ev img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.my_card_date_2 {
+    background-color: transparent;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+}
+
+.my_card_date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_card_date_2 .calendar-icon-wrapper_2 {
+    background: linear-gradient(90deg,
+            rgba(96, 2, 69, 1) 0%,
+            rgba(184, 0, 132, 1) 100%);
+    border-radius: 8px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.badge_date {
+    margin: 0px 0px 0px 5px;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.my_card_edit {
+    background-color: transparent;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+}
+
+.my_card_edit .calendar-icon-wrapper_2 {
+    background: linear-gradient(90deg,
+            rgba(96, 2, 69, 1) 0%,
+            rgba(184, 0, 132, 1) 100%);
+    border-radius: 8px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    #events-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*Fin modificación Eventos*/
