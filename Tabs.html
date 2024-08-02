@@ -63,6 +63,145 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-blog" role="tabpanel" aria-labelledby="pills-blog-tab">
+                <!-- Button trigger modal -->
+                <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                            data-bs-target="#e_interno">
+                            Interno
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                            data-bs-target="#e_externo">
+                            Externo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="e_interno" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Interno</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="tituloInput">Titulo del evento</label>
+                                        <input type="text" class="form-control" id="tituloInput">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ThematicInput">Temática o subtitulo</label>
+                                        <textarea type="text" class="form-control" id="ThematicInput">
+                                        </textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="placeInput">Lugar del evento</label>
+                                        <input type="text" class="form-control" id="placeInput">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dateInput">Fecha del evento (shorwiew)</label>
+                                        <input type="text" class="form-control" id="dateInput">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contactInput">Contacto</label>
+                                        <input type="text" class="form-control" id="contactInput">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mailInput">Correo</label>
+                                        <input type="text" class="form-control" id="mailInput">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="summaryInput">Resumen del evento</label>
+                                        <textarea type="text" class="form-control" id="summaryInput">
+                                        </textarea>
+                                    </div>
+                                    <div class="form-group col-sm-12 container">
+                                        <div>
+                                            <label>Imagen en español</label>
+                                            <input type="file" id="imageFile_es" name="imageFile"
+                                                accept=".jpg, .jpeg, .png">
+                                            <div id="banner_event"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <label for="dateIInput">Fecha de inicio del evento</label>
+                                        <input type="date" class="form-control" id="dateIInput">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <label for="datePInput">Fecha de publicación en página web</label>
+                                        <input type="date" class="form-control" id="datePInput">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <label for="dateCInput">Fecha de caducidad en página web</label>
+                                        <input type="date" class="form-control" id="dateCInput">
+                                    </div>
+                                    <div class="form-group col-sm-12">
+                                        <label for="URLInput">URL de inscripción</label>
+                                        <textarea type="text" class="form-control" id="URLInput">
+                                        </textarea>
+                                    </div>
+                                    <div class="form-group col-sm-12 container">
+                                        <div>
+                                            <label>Archivos</label>
+                                            <input type="file" id="docsFiles" name="docsFiles[]"
+                                                accept=".docx,.pdf,.xlsx,.csv,.png,.jpg,.jpeg" multiple>
+                                            <ul id="fileList"></ul>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="e_externo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Externo</h5>
+                                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name" class="col-form-label">Tu Nombre</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Tu email</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Mensaje</label>
+                                        <input type="text" class="form-control" id="message-text">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
                 <div class="my_list_grid">
                     <div class="card card-serv d-flex flex-column justify-content-between align-items-center">
                         <div class="card-body">
