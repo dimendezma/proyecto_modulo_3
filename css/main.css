@@ -10,13 +10,7 @@
 }
 
 
-.jumbotron {
-    background-color: #efd9fd;
-    color: black;
-    height: auto;
-    margin-bottom: 20px;
-    margin-top: 50px;
-}
+
 
 footer {
     padding: 20px;
@@ -100,4 +94,51 @@ footer {
 
 .tab-pane {
     padding: 0px 150px 0px 150px;
+}
+
+
+
+
+
+.jumbotron {
+    background-color: transparent;
+    color: black;
+    height: auto;
+
+}
+
+.jumbotron_2 {
+    background-color: transparent;
+    color: black;
+    height: auto;
+    position: absolute;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.banner_event img {
+    aspect-ratio: 3/1;
+    width: 100%;
+}
+
+.card-group_event {
+    background-color: #dfe66b !important;
+    padding: 10px;
+}
+
+.card_event {
+    border: none !important;
+    background-color: transparent;
+}
+
+.my_card-img-top {
+    height: 45px;
+}
+
+.event_icon {
+    font-size: 40px;
+}
+
+.card-body_event {
+    width: 80% !important;
 }
