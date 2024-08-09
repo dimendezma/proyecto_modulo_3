@@ -62,6 +62,217 @@
             <img src="/img/internet.jpg" class="d-block w-100" alt="Banner del evento">
         </div>
 
+        <!-- Button trigger modal -->
+        <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-success" id="open_modal_i" data-bs-toggle="modal"
+                    data-bs-target="#e_interno">
+                    Interno
+                </button>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-success" id="open_modal_e" data-bs-toggle="modal"
+                    data-bs-target="#e_externo">
+                    Externo
+                </button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="e_interno" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Interno</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="my_form_event">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="Check1_English">
+                                <label class="form-check-label" for="Check1_English">Mostrar campos en inglés</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="tituloInput">Titulo del evento</label>
+                                <input type="text" class="form-control" id="tituloInput">
+                            </div>
+                            <div class="form-group d-none" id="en_title">
+                                <label for="tituloInput_en">Titulo del evento en inglés</label>
+                                <input type="text" class="form-control" id="tituloInput_en">
+                            </div>
+                            <div class="form-group">
+                                <label for="ThematicInput">Temática o subtitulo</label>
+                                <textarea type="text" class="form-control" id="ThematicInput"></textarea>
+                            </div>
+                            <div class="form-group d-none" id="en_thematic">
+                                <label for="ThematicInput_en">Temática o subtitulo en inglés</label>
+                                <textarea type="text" class="form-control" id="ThematicInput_en"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="placeInput">Lugar del evento</label>
+                                <input type="text" class="form-control" id="placeInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="dateInput">Fecha del evento (shorwiew)</label>
+                                <input type="text" class="form-control" id="dateInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactInput">Contacto y/o correo electrónico</label>
+                                <input type="text" class="form-control" id="contactInput">
+                            </div>
+                            <div class="form-group">
+                                <label for="summaryInput">Resumen del evento</label>
+                                <textarea type="text" class="form-control" id="summaryInput"></textarea>
+                            </div>
+                            <div class="form-group d-none" id="en_summary">
+                                <label for="summaryInput_en">Resumen del evento en inglés</label>
+                                <textarea type="text" class="form-control" id="summaryInput_en"></textarea>
+                            </div>
+                            <div class="form-group col-sm-12 container">
+                                <div>
+                                    <label>Imagen en español</label>
+                                    <input type="file" id="imageFile_es" name="imageFile" accept=".jpeg, .png">
+                                    <div id="banner_event"></div>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-12 container d-none" id="en_banner">
+                                <div>
+                                    <label>Imagen en inglés</label>
+                                    <input type="file" id="imageFile_en" name="imageFile_en" accept=".jpg, .jpeg, .png">
+                                    <div id="banner_event_en"></div>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-8 col-md-3">
+                                <label for="dateIInput">Fecha de inicio del evento</label>
+                                <input type="date" class="form-control" id="dateIInput">
+                            </div>
+                            <div class="form-group col-sm-8 col-md-3">
+                                <label for="datePInput">Fecha de publicación en página web</label>
+                                <input type="date" class="form-control" id="datePInput">
+                            </div>
+                            <div class="form-group col-sm-8 col-md-3">
+                                <label for="dateCInput">Fecha de caducidad en página web</label>
+                                <input type="date" class="form-control" id="dateCInput">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="URLInput">URL de inscripción</label>
+                                <input type="text" class="form-control" id="URLInput">
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="show_title" checked>
+                                <label class="custom-control-label" for="show_title" id="show_title_label">Mostrar
+                                    título: Sí</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="show_banner">
+                                <label class="custom-control-label" for="show_banner" id="show_banner_label">Mostrar
+                                    evento como banner: No</label>
+                            </div>
+                            <div class="custom-control custom-switch d-none" id="banner_link_containter">
+                                <input type="checkbox" class="custom-control-input" id="banner_link">
+                                <label class="custom-control-label" for="banner_link" id="banner_link_label">Convertir
+                                    banner en un enlace: No</label>
+                            </div>
+                            <div class="form-group col-sm-12 container">
+                                <div>
+                                    <label>Archivos</label>
+                                    <input type="file" id="docsFiles" name="docsFiles[]"
+                                        accept=".docx,.pdf,.xlsx,.csv,.png,.jpg,.jpeg" multiple>
+                                    <ul id="fileList"></ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            id="Close_m_Event">Cerrar</button>
+                        <button type="button" class="btn btn-primary d-block" id="createEvent">Guardar</button>
+                        <button type="button" class="btn btn-primary d-none" id="updateEvent">Actualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="e_externo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Externo</h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="my_form_event_ex">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="Check1_English_ex">
+                                <label class="form-check-label" for="Check1_English_ex">Mostrar campos en inglés</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="tituloInput_ex">Titulo del evento</label>
+                                <input type="text" class="form-control" id="tituloInput_ex">
+                            </div>
+                            <div class="form-group d-none" id="en_title_ex">
+                                <label for="tituloInput_en_ex">Titulo del evento en inglés</label>
+                                <input type="text" class="form-control" id="tituloInput_en_ex">
+                            </div>
+                            <div class="form-group">
+                                <label for="ThematicInput_ex">Temática o subtitulo</label>
+                                <textarea type="text" class="form-control" id="ThematicInput_ex"></textarea>
+                            </div>
+                            <div class="form-group d-none" id="en_thematic_ex">
+                                <label for="ThematicInput_en_ex">Temática o subtitulo en inglés</label>
+                                <textarea type="text" class="form-control" id="ThematicInput_en_ex"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="dateInput_ex">Fecha del evento (shorwiew)</label>
+                                <input type="text" class="form-control" id="dateInput_ex">
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="URLInput_ex">URL de inscripción</label>
+                                <input type="text" class="form-control" id="URLInput_ex">
+                            </div>
+                            <div class="form-group col-sm-8 col-md-3">
+                                <label for="dateIInput_ex">Fecha de inicio del evento</label>
+                                <input type="date" class="form-control" id="dateIInput_ex">
+                            </div>
+                            <div class="form-group col-sm-8 col-md-3">
+                                <label for="datePInput_ex">Fecha de publicación en página web</label>
+                                <input type="date" class="form-control" id="datePInput_ex">
+                            </div>
+                            <div class="form-group col-sm-8 col-md-3">
+                                <label for="dateCInput_ex">Fecha de caducidad en página web</label>
+                                <input type="date" class="form-control" id="dateCInput_ex">
+                            </div>
+                            <div class="form-group col-sm-12 container">
+                                <div>
+                                    <label>Imagen en español</label>
+                                    <input type="file" id="imageFile_es_ex" name="imageFile" accept=".jpeg, .png">
+                                    <div id="banner_event_ex"></div>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-12 container d-none" id="en_banner_ex">
+                                <div>
+                                    <label>Imagen en inglés</label>
+                                    <input type="file" id="imageFile_en_ex" name="imageFile_en"
+                                        accept=".jpg, .jpeg, .png">
+                                    <div id="banner_event_en_ex"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            id="Close_m_Event_ex">Cerrar</button>
+                        <button type="button" class="btn btn-primary d-block" id="createEvent_ex">Guardar</button>
+                        <button type="button" class="btn btn-primary d-none" id="updateEvent_ex">Actualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
@@ -81,6 +292,67 @@
                 interval: 5000
             })
         });
+    </script>
+
+    <script>
+        $("#docsFiles").on("change", function () {
+            uploadFiles(this.files[0]);
+        });
+        var files;
+        function uploadFiles(file_uploaded) {
+            console.log(file_uploaded);
+
+            var formData = new FormData();
+
+            var fileList = $("#fileList");
+            console.log(fileList);
+
+            if (file_uploaded === undefined) {
+                console.log("Seleccione un archivo");
+            }
+            else {
+                formData.append("docsFiles[]", file_uploaded);
+                console.log(formData);
+                fileList.append(
+                    '<li class="col-sm-12" style="font:smaller;display:flex;">' +
+                    file_uploaded.name +
+                    "</li>"
+                );
+                console.log(fileList);
+
+                files = files + "-||-" + file_uploaded.name;
+                console.log(files);
+            }
+
+            $.ajax({
+                url: urlFija + "upload_files.php",
+                type: "POST",
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    console.log(formData);
+                    switch (response) {
+                        case "No se han subido archivos o ha ocurrido un error.":
+                            alert("No se han subido archivos o ha ocurrido un error.");
+                            break;
+                        case "Método de solicitud no permitido.":
+                            alert("Método de solicitud no permitido.");
+                            break;
+                        default:
+                            alert("Documentos subidos exitosamente");
+                            break;
+                    }
+
+
+                    console.log(response);
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert("Error al subir los documentos");
+                    console.log(textStatus, errorThrown);
+                },
+            });
+        }
     </script>
     <!--modal -->
 
