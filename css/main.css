@@ -100,25 +100,40 @@ footer {
 
 
 
-.jumbotron {
+.jumbotron_1 {
     background-color: transparent;
     color: black;
     height: auto;
-
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Roboto", sans-serif !important;
 }
 
 .jumbotron_2 {
     background-color: transparent;
     color: black;
     height: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Roboto", sans-serif !important;
     position: absolute;
     margin-top: 50px;
     width: 80%;
 }
 
+.banner_event {
+    margin: 10px 0px 10px 0px;
+}
+
 .banner_event img {
     aspect-ratio: 3/1;
     width: 100%;
+    box-shadow: 8px 9px 6px -6px #00000070;
+    border-radius: 5%;
 }
 
 .card-group_event {
@@ -129,6 +144,8 @@ footer {
 .card_event {
     border: none !important;
     background-color: transparent;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .my_card-img-top {
@@ -136,9 +153,15 @@ footer {
 }
 
 .event_icon {
-    font-size: 40px;
+    font-size: 40px !important;
 }
 
 .card-body_event {
     width: 80% !important;
+}
+
+.event-files {
+    border-top: 1px solid #999;
+    margin-top: 2em;
+    padding-top: 1em;
 }
